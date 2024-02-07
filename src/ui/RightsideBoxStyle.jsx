@@ -1,6 +1,7 @@
 export const RightsideBoxStyle = {
     // backgroundColor: "green",
-    width: "calc(100% - 400px)",
+    width: "800px",
     height: "100%",
-    margin : "0 20px"
+    margin : "0 20px",
+    padding:" 0 20px"
   }
