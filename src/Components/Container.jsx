@@ -1,7 +1,5 @@
 import { Box,Container } from '@mui/material'
 
-
-
  function ContainerA() {
   return (
     
@@ -37,4 +35,6 @@ import { Box,Container } from '@mui/material'
 }
 
 
-export default Container;
+export default ContainerA;
+
+
