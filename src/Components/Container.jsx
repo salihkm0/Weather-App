@@ -17,11 +17,11 @@ import { Box,Container } from '@mui/material'
   sx={{
     backgroundColor:"#030005",
     color:"white",
-    width:"300px",
-    height:"400px",
+    width:"1600px",
+    height:"700px",
     textAlign:"center",
     padding:"20px",
-    borderRadius:"90px",
+    borderRadius:"50px",
     display:"flex",
     flexDirection:"column",
     justifyContent:"space-around",
@@ -37,4 +37,4 @@ import { Box,Container } from '@mui/material'
 }
 
 
-export default Container;
+export default ContainerA;
