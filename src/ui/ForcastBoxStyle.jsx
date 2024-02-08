@@ -15,7 +15,22 @@ export const ForcastBoxStyle ={
     borderRadius: "20px",
     display:"flex",
     alignItems:"center",
-    overflow:"scroll"
+    overflow:"auto",
+    overflowY:"hidden",
+    // scrollbarWidth: "none",
+    // msOverflowStyle: "none",
+    "&::-webkit-scrollbar": {
+        width: "10px",
+      },
+      "&::-webkit-scrollbar-track": {
+        background: "#f1f1f1",
+      },
+      "&::-webkit-scrollbar-thumb": {
+        background: "#756",
+      },
+      "&::-webkit-scrollbar-thumb:hover": {
+        background: "#678",
+      },
 }
 export const UVindexStyle ={
     background:"red",
