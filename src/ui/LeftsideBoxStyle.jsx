@@ -16,7 +16,7 @@ export const LeftsideBoxStyle = {
   export const SideInnerBoxStyle = {
     // padding:"10px",
     // justifyContent:"center",
-    backgroundColor: "#17d941",
+    backgroundColor: "#11121168",
     width: "170px",
     height: "100px",
     margin: "10px",
