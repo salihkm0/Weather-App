@@ -5,7 +5,7 @@ export const SearchBoxStyle = {
        display: 'flex',
        alignItems: 'center',
        width: 400 ,
-       backgroundColor: "green"
+       backgroundColor: "white"
 
 }
 

@@ -5,5 +5,5 @@ export const ContainerStyle = {
     width:"100%",
  // alignItems: "center",
 //  padding : "50px",
-//  backgroundColor: "#661a98",
+// backgroundColor: "#ed0cf1",
   }

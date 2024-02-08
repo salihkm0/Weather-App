@@ -1,5 +1,6 @@
 export const MainBoxStyle = {
-    backgroundColor: "#030005",
+    backgroundColor: "#030005a4",
+    backdropFilter:"blur(10px)",
     color: "white",
     width: "1000px",
     height: "620px",
