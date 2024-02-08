@@ -12,7 +12,7 @@ export default function LeftsideBox() {
   return (
     <>
       <Box sx={LeftsideBoxStyle}>
-      <BackgroundVedio />
+      {/* <BackgroundVedio /> */}
         <Stack direction={"column"}>
           <Box sx={InnerBox}></Box>
           <Stack direction={"row"}>

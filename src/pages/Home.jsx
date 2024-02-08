@@ -9,6 +9,7 @@ import CustomizedInputBase from "../Components/SearchBox";
 import { SearchBoxStyle } from "../ui/SearchBoxStyle";
 import LeftsideBox from "../Components/LeftsideBox";
 import BackgroundVedio from "../Components/BackgroundVedio";
+import RightsideBox from "../Components/RightsideBox";
 
 export default function Home() {
   return (
@@ -21,31 +22,7 @@ export default function Home() {
               <CustomizedInputBase sx={SearchBoxStyle} />
               <LeftsideBox />
             </Stack>
-            <Box sx={RightsideBoxStyle}>
-              <Stack direction={"column"}>
-                <Box>
-                  <Grid container spacing={2}>
-                    <Grid item xs={12}>
-                
-                      <Box sx={ForcastBoxStyle}>1</Box>
-                    </Grid>
-                    <Grid item xs={12}>
-                      <Box sx={ForcastBoxStyle}>2</Box>
-                    </Grid>
-                    <Grid item xs={12}>
-                      <Stack
-                        direction="row"
-                        justifyContent="space-between"
-                        spacing={2}
-                      >
-                        <Box sx={ForcastBoxStyle}>3</Box>
-                        <Box sx={ForcastBoxStyle}>4</Box>
-                      </Stack>
-                    </Grid>
-                  </Grid>
-                </Box>
-              </Stack>
-            </Box>
+            <RightsideBox/>
           </Stack>
         </Box>
       </Container>
