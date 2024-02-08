@@ -1,9 +1,10 @@
 export const MainBoxStyle = {
     backgroundColor: "#030005",
     color: "white",
-    width: "100%",
-    height: "100%",
+    width: "1000px",
+    height: "620px",
     textAlign: "center",
+    alignSelf:"center",
     padding: "20px",
     borderRadius: "20px",
     display: "flex",

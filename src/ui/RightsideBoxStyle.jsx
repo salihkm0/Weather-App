@@ -2,6 +2,6 @@ export const RightsideBoxStyle = {
     // backgroundColor: "green",
     width: "800px",
     height: "100%",
-    margin : "0 20px",
+    marginLeft:" 30px",
     padding:" 0 0px"
   }
