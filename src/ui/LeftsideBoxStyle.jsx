@@ -1,7 +1,8 @@
 export const LeftsideBoxStyle = {
     backgroundColor: "green",
     width: "400px",
-    height: "600px",
-    // margin: "40px",
+    height: "580px",
+    // margin: "10px",
+    // padding:" 0 10px",
     borderRadius: "20px",
   }

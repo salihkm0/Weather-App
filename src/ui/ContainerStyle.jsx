@@ -1,8 +1,10 @@
 export const ContainerStyle = {
     display: "flex",
-    justifyContent: "center",
+    justify: "center",
     alignItems: "center",
     height: "700px",
-    // padding : "50px",
-  //   backgroundColor: "#661a98",
+    marginTop:" 55px",
+ // width:"1200px",
+ // padding : "50px",
+ // backgroundColor: "#661a98",
   }

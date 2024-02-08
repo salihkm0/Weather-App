@@ -5,6 +5,9 @@ import { LeftsideBoxStyle } from "../ui/LeftsideBoxStyle";
 import { MainBoxStyle } from "../ui/MainBoxStyle";
 import { RightsideBoxStyle } from "../ui/RightsideBoxStyle";
 import { ForcastBoxStyle } from "../ui/ForcastBoxStyle";
+import CustomizedInputBase from "../Components/SearchBox";
+import { SearchBoxStyle } from "../ui/SearchBoxStyle";
+
 
 export default function Home() {
   return (
@@ -13,18 +16,19 @@ export default function Home() {
         <Box sx={MainBoxStyle}>
           <Stack direction={'row'}>
             <Stack>
+              <CustomizedInputBase sx={SearchBoxStyle} /> 
             <Box sx={LeftsideBoxStyle}>Left Side Box</Box>
             </Stack>
             <Box sx={RightsideBoxStyle}>
             <Stack direction={'column'}>
                 <Box>
                 <Grid container spacing={2}>
-                <Grid item xs={12}> <Box sx={ForcastBoxStyle}>2</Box></Grid>
+                <Grid item xs={12}> <Box sx={ForcastBoxStyle}>1</Box></Grid>
                 <Grid item xs={12}> <Box sx={ForcastBoxStyle}>2</Box></Grid>
                 <Grid item xs={12}> 
                 <Stack  direction="row" justifyContent="space-between" spacing={2}>
-                <Box sx={ForcastBoxStyle}>2</Box>
-                <Box sx={ForcastBoxStyle}>2</Box>
+                <Box sx={ForcastBoxStyle}>3</Box>
+                <Box sx={ForcastBoxStyle}>4</Box>
                 </Stack>
                 </Grid>
               </Grid>
