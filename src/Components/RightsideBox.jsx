@@ -5,6 +5,8 @@ import {
   ForcastInnerBoxStyle,
   ForcastSubBoxStyle,
   UVindexStyle,
+  FBhourly,
+  styledHr,
 } from "../ui/ForcastBoxStyle";
 import { Box, Grid, Stack } from "@mui/material";
 
@@ -25,17 +27,39 @@ export default function RightsideBox() {
               <Grid item xs={12}>
                 <Box sx={ForcastBoxStyle}>
                   <Box sx={ForcastSubBoxStyle}>
-                    <Stack direction="row">
-                      <Box sx={ForcastInnerBoxStyle}>1</Box>
-                      <Box sx={ForcastInnerBoxStyle}>2</Box>
-                      <Box sx={ForcastInnerBoxStyle}>3</Box>
-                      <Box sx={ForcastInnerBoxStyle}>4</Box>
-                      <Box sx={ForcastInnerBoxStyle}>5</Box>
-                      <Box sx={ForcastInnerBoxStyle}>6</Box>
-                      <Box sx={ForcastInnerBoxStyle}>7</Box>
-                      <Box sx={ForcastInnerBoxStyle}>8</Box>
-                      <Box sx={ForcastInnerBoxStyle}>9</Box>
-                      <Box sx={ForcastInnerBoxStyle}>10</Box>
+                    <Stack direction={"column"}>
+                      <Box>sss</Box>
+                      <hr style={styledHr} />
+                      <Stack direction="row" spacing={""}>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                      </Stack>
                     </Stack>
                   </Box>
                 </Box>
@@ -43,17 +67,39 @@ export default function RightsideBox() {
               <Grid item xs={12}>
                 <Box sx={ForcastBoxStyle}>
                   <Box sx={ForcastSubBoxStyle}>
-                    <Stack direction="row">
-                      <Box sx={ForcastInnerBoxStyle}>1</Box>
-                      <Box sx={ForcastInnerBoxStyle}>2</Box>
-                      <Box sx={ForcastInnerBoxStyle}>3</Box>
-                      <Box sx={ForcastInnerBoxStyle}>4</Box>
-                      <Box sx={ForcastInnerBoxStyle}>5</Box>
-                      <Box sx={ForcastInnerBoxStyle}>6</Box>
-                      <Box sx={ForcastInnerBoxStyle}>7</Box>
-                      <Box sx={ForcastInnerBoxStyle}>8</Box>
-                      <Box sx={ForcastInnerBoxStyle}>9</Box>
-                      <Box sx={ForcastInnerBoxStyle}>10</Box>
+                  <Stack direction={"column"}>
+                      <Box>sss</Box>
+                      <hr style={styledHr} />
+                      <Stack direction="row" spacing={""}>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                        <Box sx={ForcastInnerBoxStyle}>
+                          <p sx={{}}> Now </p>
+                          <h2 sx={FBhourly}>28°</h2>
+                        </Box>
+                      </Stack>
                     </Stack>
                   </Box>
                 </Box>
