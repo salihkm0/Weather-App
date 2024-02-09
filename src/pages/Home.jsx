@@ -1,5 +1,4 @@
 import { Box, Container, Stack } from "@mui/material";
-import React from "react";
 import { ContainerStyle } from "../ui/ContainerStyle";
 import { LeftsideBoxStyle } from "../ui/LeftsideBoxStyle";
 import { MainBoxStyle } from "../ui/MainBoxStyle";
