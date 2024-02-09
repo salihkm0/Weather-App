@@ -7,6 +7,7 @@ import IconButton from "@mui/material/IconButton";
 import SearchIcon from "@mui/icons-material/Search";
 import DirectionsIcon from "@mui/icons-material/Directions";
 import { SearchBoxPlaceholder, SearchBoxStyle } from "../ui/SearchBoxStyle";
+import { UilLocationPoint } from '@iconscout/react-unicons'
 
 export default function CustomizedInputBase() {
   return (
@@ -14,6 +15,9 @@ export default function CustomizedInputBase() {
       {/* <IconButton sx={{ p: '10px' }} aria-label="menu">
         <MenuIcon />
       </IconButton> */}
+      <IconButton type="button" sx={{ p: "10px" }} aria-label="search">
+        <UilLocationPoint  />
+      </IconButton>
       <InputBase
         sx={SearchBoxPlaceholder}
         placeholder="Enter Location"
