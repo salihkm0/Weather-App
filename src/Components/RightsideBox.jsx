@@ -7,6 +7,8 @@ import {
   UVindexStyle,
   FBhourly,
   styledHr,
+  forcastHead,
+  FBhead,
 } from "../ui/ForcastBoxStyle";
 import { Box, Grid, Stack } from "@mui/material";
 
@@ -26,10 +28,10 @@ export default function RightsideBox() {
 
               <Grid item xs={12}>
                 <Box sx={ForcastBoxStyle}>
-                  <Box sx={ForcastSubBoxStyle}>
-                    <Stack direction={"column"}>
-                      <Box>sss</Box>
-                      <hr style={styledHr} />
+                  <Stack direction={"column"}>
+                    <Box sx={FBhead}>sss</Box>
+                    <hr style={styledHr} />
+                    <Box sx={ForcastSubBoxStyle}>
                       <Stack direction="row" spacing={""}>
                         <Box sx={ForcastInnerBoxStyle}>
                           <p sx={{}}> Now </p>
@@ -60,16 +62,16 @@ export default function RightsideBox() {
                           <h2 sx={FBhourly}>28°</h2>
                         </Box>
                       </Stack>
-                    </Stack>
-                  </Box>
+                    </Box>
+                  </Stack>
                 </Box>
               </Grid>
               <Grid item xs={12}>
                 <Box sx={ForcastBoxStyle}>
-                  <Box sx={ForcastSubBoxStyle}>
                   <Stack direction={"column"}>
-                      <Box>sss</Box>
-                      <hr style={styledHr} />
+                  <Box sx={FBhead}>sss</Box>
+                    <hr style={styledHr} />
+                    <Box sx={ForcastSubBoxStyle}>
                       <Stack direction="row" spacing={""}>
                         <Box sx={ForcastInnerBoxStyle}>
                           <p sx={{}}> Now </p>
@@ -100,8 +102,8 @@ export default function RightsideBox() {
                           <h2 sx={FBhourly}>28°</h2>
                         </Box>
                       </Stack>
-                    </Stack>
-                  </Box>
+                    </Box>
+                  </Stack>
                 </Box>
               </Grid>
 

@@ -5,14 +5,14 @@ export const SearchBoxStyle = {
        display: 'flex',
        alignItems: 'center',
        width: 400 ,
-       backgroundColor: "white"
+       backgroundColor: "#4c474799"
 
 }
 
 export const SearchBoxPlaceholder  ={
     ml: 1, 
     flex: 1,
-    backgroundColor: "whit",
+    color: "#fffbfbf4",
 
 
 }

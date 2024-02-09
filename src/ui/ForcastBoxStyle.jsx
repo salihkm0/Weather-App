@@ -7,11 +7,24 @@ export const ForcastInnerBoxStyle ={
     margin:"7px",   
 }
 
+export const ForcastBoxStyle ={
+
+  background:"#0b0b0b35",
+  backdropFilter:"blur(10px)",
+  msOverflowStyle: "none",
+  height:"180px",
+  maxWidth:"570px",
+  borderRadius: "20px",
+  display:"flex",
+  alignItems:"end",
+  justifyContent:"center",
+}
+
 export const ForcastSubBoxStyle ={
-  height:"150px",
+  height:"123px",
   maxWidth:"550px",
   borderRadius: "20px",
-  marginBottom:"10px",
+  marginBottom:"14px",
   display:"flex",
   alignItems:"end",
   overflow:"auto",
@@ -23,7 +36,6 @@ export const ForcastSubBoxStyle ={
     background: "#f1f1f1",
     backgroundFilter:"blur",
     borderRadius:"2px",
-    width:"550px"
   },
   "&::-webkit-scrollbar-thumb": {
     background: "#756",
@@ -34,25 +46,13 @@ export const ForcastSubBoxStyle ={
     background: "#678",
   }, 
 
-    margin:"7px",
 }
 
 export const FBhourly={
   textAlign:"center"
 }
 
-export const ForcastBoxStyle ={
 
-    background:"#0b0b0b35",
-    backdropFilter:"blur(10px)",
-    msOverflowStyle: "none",
-    height:"180px",
-    maxWidth:"570px",
-    borderRadius: "20px",
-    display:"flex",
-    alignItems:"end",
-    justifyContent:"center",
-}
 
 
 export const UVindexStyle ={
@@ -66,4 +66,11 @@ export const UVindexStyle ={
 
 export const styledHr ={
   width:"100%",
+  margin:"0px"
+}
+
+export const FBhead ={
+  fontSize:"23px",
+  textAlign:"start",
+  justifyContent:"end"
 }
