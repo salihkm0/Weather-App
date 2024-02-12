@@ -1,5 +1,5 @@
 export const ForcastInnerBoxStyle ={
-  background:"#4c474782",
+  // background:"#4c474782",
   height:"95px",
   minWidth:"80px",
   borderRadius: "20px",
@@ -32,17 +32,17 @@ overflowY:"hidden",
     height:"4px",
 },
 "&::-webkit-scrollbar-track": {
-  background: "#f1f1f1",
+  background: "#555151",
   backgroundFilter:"blur",
   borderRadius:"2px",
 },
 "&::-webkit-scrollbar-thumb": {
-  background: "#756",
+  background: "#373536",
   backgroundFilter:"blur",
   borderRadius:"2px"
 },
 "&::-webkit-scrollbar-thumb:hover": {
-  background: "#678",
+  background: "#3b7bbc",
 }, 
 
 }
@@ -59,6 +59,7 @@ export const UVindexStyle ={
   height:"170px",
   width:"100%",
   borderRadius: "20px",
+  marginBottom:"10px",
   // overflow:"hidden"
 
 }
@@ -69,7 +70,7 @@ margin:"0px"
 }
 
 export const FBhead ={
-fontSize:"23px",
+// fontSize:"23px",
 textAlign:"start",
-justifyContent:"end"
+// justifyContent:"end"
 }
