@@ -2,6 +2,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import {
   InnerBox,
+  InnerBox2,
   LeftsideBoxStyle,
   LeftsideInnerBoxStyle,
   SideInnerBoxStyle,
@@ -24,6 +25,7 @@ export default function LeftsideBox() {
                Today, expect a rainy day with temperratures reaching a maximum of 28°C.
             </Typography>
           </Box>
+          <Box sx={InnerBox2}>
           <Stack direction={"row"}>
             <Box sx={SideInnerBoxStyle}>
             <Typography variant="h1" fontSize={13} marginTop={1} ><UilTemperatureHalf/>  FEELS LIKE</Typography>
@@ -47,6 +49,7 @@ export default function LeftsideBox() {
             <Typography variant="p" fontSize={9} marginLeft={1}>The dew point is 25° right now</Typography>
             </Box>
           </Stack>
+          </Box>
         </Stack>
       </Box>
     </>

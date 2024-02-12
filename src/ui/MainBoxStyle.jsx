@@ -3,7 +3,7 @@ export const MainBoxStyle = {
     backdropFilter:"blur(10px)",
     color: "white",
     width: "1000px",
-    height: "620px",
+    height: "660px",
     textAlign: "center",
     alignSelf:"center",
     padding: "20px",

@@ -6,7 +6,7 @@ export const LeftsideBoxStyle = {
   backgroundColor: "#11121130",
   border: "2px solid #0000006e",
   width: "400px",
-  height: "540px",
+  height: "560px",
   borderRadius: "20px",
   display: "flex",
   justifyContent: "center",
@@ -20,6 +20,15 @@ export const InnerBox = {
   borderRadius: "10px",
   marginBottom: "10px",
   padding: "0 10px",
+};
+export const InnerBox2 = {
+  backgroundColor: "",
+  width: "95%",
+  height: "240px",
+  marginTop:"10px",
+  borderRadius: "10px",
+  marginBottom: "10px",
+  alignSelf:"center",
 };
 export const SideInnerBoxStyle = {
   // padding:"10px",

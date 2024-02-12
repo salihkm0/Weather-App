@@ -11,7 +11,7 @@ export const ForcastBoxStyle ={
 
 background:"#00000031",
 msOverflowStyle: "none",
-height:"180px",
+height:"170px",
 maxWidth:"570px",
 borderRadius: "20px",
 display:"flex",
@@ -45,6 +45,45 @@ overflowY:"hidden",
   background: "#3b7bbc",
 }, 
 
+}
+
+export const ForcastBoxStyle10 ={
+
+  background:"#00000031",
+  msOverflowStyle: "none",
+  height:"200px",
+  maxWidth:"570px",
+  borderRadius: "20px",
+  display:"flex",
+  alignItems:"start",
+  justifyContent:"center",
+}
+
+export const ForcastSubBoxStyle10 ={
+  height:"153px",
+  maxWidth:"550px",
+  borderRadius: "20px",
+  marginBottom:"14px",
+  display:"flex",
+  alignItems:"start",
+  overflow:"auto",
+  overflowY:"hidden",
+  "&::-webkit-scrollbar": {
+      height:"4px",
+  },
+  "&::-webkit-scrollbar-track": {
+    background: "#555151",
+    backgroundFilter:"blur",
+    borderRadius:"2px",
+  },
+  "&::-webkit-scrollbar-thumb": {
+    background: "#373536",
+    backgroundFilter:"blur",
+    borderRadius:"2px"
+  },
+  "&::-webkit-scrollbar-thumb:hover": {
+    background: "#3b7bbc",
+  }, 
 }
 
 export const FBhourly={

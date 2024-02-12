@@ -9,6 +9,8 @@ import {
   styledHr,
   forcastHead,
   FBhead,
+  ForcastBoxStyle10,
+  ForcastSubBoxStyle10,
 } from "../ui/ForcastBoxStyle";
 import { Box, Grid, Stack, Typography,Span } from "@mui/material";
 import { UilClockThree,UilCalender,UilCloudShowersHeavy,UilSnowFlake,UilCloudSun,UilThunderstorm,UilClouds,UilCloudSunHail,UilCloudShowersAlt } from '@iconscout/react-unicons'
@@ -80,16 +82,16 @@ export default function RightsideBox() {
                 </Box>
               </Grid>
               <Grid item xs={12}>
-                <Box sx={ForcastBoxStyle}>
+                <Box sx={ForcastBoxStyle10}>
                   <Stack direction={"column"}>
                   <Box sx={FBhead}>
-                    <Stack direction={"row"}>
-                      <Typography marginLeft={2}  sx={{display:"inline-block"}} ><UilCalender size={17} /></Typography>
-                    <Typography variant="h1" fontSize={15} marginBottom={1} marginLeft={0.5} >10 DAY FORECAST</Typography>
-                    </Stack>
+                      <Stack direction={'row'}>
+                      <Typography marginLeft={2} marginTop={1} sx={{display:"inline-block"}}><UilCalender size={17} /></Typography>
+                      <Typography variant="h1" fontSize={15} marginBottom={1} marginTop={1} marginLeft={0.5}>10 DAY FORECAST</Typography>
+                      </Stack>
                   </Box>
                     <hr style={styledHr} />
-                    <Box sx={ForcastSubBoxStyle}>
+                    <Box sx={ForcastSubBoxStyle10}>
                       <Stack direction="row" spacing={""}>
                         <Box sx={ForcastInnerBoxStyle}>
                           <Typography variant="h1" fontSize={11} marginTop={2}>Today</Typography>
