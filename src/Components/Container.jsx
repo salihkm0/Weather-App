@@ -6,12 +6,8 @@ import MainBox from "./MainBox";
 function ContainerA() {
   return (
     <>
-      <Container
-        sx={ContainerStyle}
-      >
-        <MainBox>
-          
-        </MainBox>
+      <Container sx={ContainerStyle}>
+        <MainBox></MainBox>
       </Container>
     </>
   );

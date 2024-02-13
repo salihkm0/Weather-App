@@ -11,9 +11,23 @@ import {
   FBhead,
   ForcastBoxStyle10,
   ForcastSubBoxStyle10,
+  FIBHRFIRST,
+  FIB10DFIRST,
+  ForcastInnerBox10D,
+  ForcastInnerBoxHrly,
 } from "../ui/ForcastBoxStyle";
-import { Box, Grid, Stack, Typography,Span } from "@mui/material";
-import { UilClockThree,UilCalender,UilCloudShowersHeavy,UilSnowFlake,UilCloudSun,UilThunderstorm,UilClouds,UilCloudSunHail,UilCloudShowersAlt } from '@iconscout/react-unicons'
+import { Box, Grid, Stack, Typography, Span } from "@mui/material";
+import {
+  UilClockThree,
+  UilCalender,
+  UilCloudShowersHeavy,
+  UilSnowFlake,
+  UilCloudSun,
+  UilThunderstorm,
+  UilClouds,
+  UilCloudSunHail,
+  UilCloudShowersAlt,
+} from "@iconscout/react-unicons";
 
 export default function RightsideBox() {
   return (
@@ -33,47 +47,122 @@ export default function RightsideBox() {
                 <Box sx={ForcastBoxStyle}>
                   <Stack direction={"column"}>
                     <Box sx={FBhead}>
-                      <Stack direction={'row'}>
-                      <Typography marginLeft={2}  sx={{display:"inline-block"}}><UilClockThree size={17} /></Typography>
-                      <Typography variant="h1" fontSize={15} marginBottom={1} marginLeft={0.5}>HOURLY FORECAST</Typography>
+                      <Stack direction={"row"}>
+                        <Typography
+                          marginLeft={2}
+                          sx={{ display: "inline-block" }}
+                        >
+                          <UilClockThree size={17} />
+                        </Typography>
+                        <Typography
+                          variant="h1"
+                          fontSize={15}
+                          marginBottom={1}
+                          marginLeft={0.5}
+                        >
+                          HOURLY FORECAST
+                        </Typography>
                       </Stack>
-                      </Box>
+                    </Box>
                     <hr style={styledHr} />
                     <Box sx={ForcastSubBoxStyle}>
                       <Stack direction="row" spacing={""}>
-                        <Box sx={ForcastInnerBoxStyle}>
-                          <Typography marginTop={2}fontSize={11} variant="h1">Now</Typography>
-                          <Typography marginTop={1} marginLeft={1} fontSize={26} variant="h2">28°</Typography>
+                        <Box sx={FIBHRFIRST}>
+                          <Typography marginTop={2} fontSize={11} variant="h1">
+                            Now
+                          </Typography>
+                          <Typography
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                            variant="h2"
+                          >
+                            28°
+                          </Typography>
                           <UilCloudShowersHeavy />
                         </Box>
-                        <Box sx={ForcastInnerBoxStyle}>
-                        <Typography marginTop={2}fontSize={11} variant="h1">Now</Typography>
-                          <Typography marginTop={1} marginLeft={1} fontSize={26} variant="h2">28°</Typography>
+                        <Box sx={ForcastInnerBoxHrly}>
+                          <Typography marginTop={2} fontSize={11} variant="h1">
+                            Now
+                          </Typography>
+                          <Typography
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                            variant="h2"
+                          >
+                            28°
+                          </Typography>
                           <UilSnowFlake />
                         </Box>
-                        <Box sx={ForcastInnerBoxStyle}>
-                        <Typography marginTop={2}fontSize={11} variant="h1">Now</Typography>
-                          <Typography marginTop={1} marginLeft={1} fontSize={26} variant="h2">28°</Typography>
+                        <Box sx={ForcastInnerBoxHrly}>
+                          <Typography marginTop={2} fontSize={11} variant="h1">
+                            Now
+                          </Typography>
+                          <Typography
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                            variant="h2"
+                          >
+                            28°
+                          </Typography>
                           <UilCloudSun />
                         </Box>
-                        <Box sx={ForcastInnerBoxStyle}>
-                        <Typography marginTop={2}fontSize={11} variant="h1">Now</Typography>
-                          <Typography marginTop={1} marginLeft={1} fontSize={26} variant="h2">28°</Typography>
+                        <Box sx={ForcastInnerBoxHrly}>
+                          <Typography marginTop={2} fontSize={11} variant="h1">
+                            Now
+                          </Typography>
+                          <Typography
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                            variant="h2"
+                          >
+                            28°
+                          </Typography>
                           <UilThunderstorm />
                         </Box>
-                        <Box sx={ForcastInnerBoxStyle}>
-                        <Typography marginTop={2}fontSize={11} variant="h1">Now</Typography>
-                          <Typography marginTop={1} marginLeft={1} fontSize={26} variant="h2">28°</Typography>
+                        <Box sx={ForcastInnerBoxHrly}>
+                          <Typography marginTop={2} fontSize={11} variant="h1">
+                            Now
+                          </Typography>
+                          <Typography
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                            variant="h2"
+                          >
+                            28°
+                          </Typography>
                           <UilClouds />
                         </Box>
-                        <Box sx={ForcastInnerBoxStyle}>
-                        <Typography marginTop={2}fontSize={11} variant="h1">Now</Typography>
-                          <Typography marginTop={1} marginLeft={1} fontSize={26} variant="h2">28°</Typography>
+                        <Box sx={ForcastInnerBoxHrly}>
+                          <Typography marginTop={2} fontSize={11} variant="h1">
+                            Now
+                          </Typography>
+                          <Typography
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                            variant="h2"
+                          >
+                            28°
+                          </Typography>
                           <UilCloudSunHail />
                         </Box>
-                        <Box sx={ForcastInnerBoxStyle}>
-                        <Typography marginTop={2}fontSize={11} variant="h1">Now</Typography>
-                          <Typography marginTop={1} marginLeft={1} fontSize={26} variant="h2">28°</Typography>
+                        <Box sx={ForcastInnerBoxHrly}>
+                          <Typography marginTop={2} fontSize={11} variant="h1">
+                            Now
+                          </Typography>
+                          <Typography
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                            variant="h2"
+                          >
+                            28°
+                          </Typography>
                           <UilCloudShowersAlt />
                         </Box>
                       </Stack>
@@ -84,55 +173,146 @@ export default function RightsideBox() {
               <Grid item xs={12}>
                 <Box sx={ForcastBoxStyle10}>
                   <Stack direction={"column"}>
-                  <Box sx={FBhead}>
-                      <Stack direction={'row'}>
-                      <Typography marginLeft={2} marginTop={1} sx={{display:"inline-block"}}><UilCalender size={17} /></Typography>
-                      <Typography variant="h1" fontSize={15} marginBottom={1} marginTop={1} marginLeft={0.5}>10 DAY FORECAST</Typography>
+                    <Box sx={FBhead}>
+                      <Stack direction={"row"}>
+                        <Typography
+                          marginLeft={2}
+                          marginTop={1}
+                          sx={{ display: "inline-block" }}
+                        >
+                          <UilCalender size={17} />
+                        </Typography>
+                        <Typography
+                          variant="h1"
+                          fontSize={15}
+                          marginBottom={1}
+                          marginTop={1}
+                          marginLeft={0.5}
+                        >
+                          10 DAY FORECAST
+                        </Typography>
                       </Stack>
-                  </Box>
+                    </Box>
                     <hr style={styledHr} />
                     <Box sx={ForcastSubBoxStyle10}>
                       <Stack direction="row" spacing={""}>
-                        <Box sx={ForcastInnerBoxStyle}>
-                          <Typography variant="h1" fontSize={11} marginTop={2}>Today</Typography>
-                          <Typography variant="h2" fontSize={9} marginTop={2}>16/09</Typography>
-                          <Typography variant="h1" marginTop={1} marginLeft={1} fontSize={26} >28°</Typography>
+                        <Box sx={FIB10DFIRST}>
+                          <Typography variant="h1" fontSize={11} marginTop={2}>
+                            Today
+                          </Typography>
+                          <Typography variant="h2" fontSize={9} marginTop={2}>
+                            16/09
+                          </Typography>
+                          <Typography
+                            variant="h1"
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                          >
+                            28°
+                          </Typography>
                           <UilCloudShowersHeavy />
                         </Box>
-                        <Box sx={ForcastInnerBoxStyle}>
-                        <Typography variant="h1" fontSize={11} marginTop={2}>Today</Typography>
-                          <Typography variant="h2" fontSize={9} marginTop={2}>16/09</Typography>
-                          <Typography variant="h1" marginTop={1} marginLeft={1} fontSize={26} >28°</Typography>
+                        <Box sx={ForcastInnerBox10D}>
+                          <Typography variant="h1" fontSize={11} marginTop={2}>
+                            Today
+                          </Typography>
+                          <Typography variant="h2" fontSize={9} marginTop={2}>
+                            16/09
+                          </Typography>
+                          <Typography
+                            variant="h1"
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                          >
+                            28°
+                          </Typography>
                           <UilSnowFlake />
                         </Box>
-                        <Box sx={ForcastInnerBoxStyle}>
-                        <Typography variant="h1" fontSize={11} marginTop={2}>Today</Typography>
-                          <Typography variant="h2" fontSize={9} marginTop={2}>16/09</Typography>
-                          <Typography variant="h1" marginTop={1} marginLeft={1} fontSize={26} >28°</Typography>
+                        <Box sx={ForcastInnerBox10D}>
+                          <Typography variant="h1" fontSize={11} marginTop={2}>
+                            Today
+                          </Typography>
+                          <Typography variant="h2" fontSize={9} marginTop={2}>
+                            16/09
+                          </Typography>
+                          <Typography
+                            variant="h1"
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                          >
+                            28°
+                          </Typography>
                           <UilCloudSun />
                         </Box>
-                        <Box sx={ForcastInnerBoxStyle}>
-                        <Typography variant="h1" fontSize={11} marginTop={2}>Today</Typography>
-                          <Typography variant="h2" fontSize={9} marginTop={2}>16/09</Typography>
-                          <Typography variant="h1" marginTop={1} marginLeft={1} fontSize={26} >28°</Typography>
+                        <Box sx={ForcastInnerBox10D}>
+                          <Typography variant="h1" fontSize={11} marginTop={2}>
+                            Today
+                          </Typography>
+                          <Typography variant="h2" fontSize={9} marginTop={2}>
+                            16/09
+                          </Typography>
+                          <Typography
+                            variant="h1"
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                          >
+                            28°
+                          </Typography>
                           <UilThunderstorm />
                         </Box>
-                        <Box sx={ForcastInnerBoxStyle}>
-                        <Typography variant="h1" fontSize={11} marginTop={2}>Today</Typography>
-                          <Typography variant="h2" fontSize={9} marginTop={2}>16/09</Typography>
-                          <Typography variant="h1" marginTop={1} marginLeft={1} fontSize={26} >28°</Typography>
+                        <Box sx={ForcastInnerBox10D}>
+                          <Typography variant="h1" fontSize={11} marginTop={2}>
+                            Today
+                          </Typography>
+                          <Typography variant="h2" fontSize={9} marginTop={2}>
+                            16/09
+                          </Typography>
+                          <Typography
+                            variant="h1"
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                          >
+                            28°
+                          </Typography>
                           <UilClouds />
                         </Box>
-                        <Box sx={ForcastInnerBoxStyle}>
-                        <Typography variant="h1" fontSize={11} marginTop={2}>Today</Typography>
-                          <Typography variant="h2" fontSize={9} marginTop={2}>16/09</Typography>
-                          <Typography variant="h1" marginTop={1} marginLeft={1} fontSize={26} >28°</Typography>
+                        <Box sx={ForcastInnerBox10D}>
+                          <Typography variant="h1" fontSize={11} marginTop={2}>
+                            Today
+                          </Typography>
+                          <Typography variant="h2" fontSize={9} marginTop={2}>
+                            16/09
+                          </Typography>
+                          <Typography
+                            variant="h1"
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                          >
+                            28°
+                          </Typography>
                           <UilCloudSunHail />
                         </Box>
-                        <Box sx={ForcastInnerBoxStyle}>
-                        <Typography variant="h1" fontSize={11} marginTop={2}>Today</Typography>
-                          <Typography variant="h2" fontSize={9} marginTop={2}>16/09</Typography>
-                          <Typography variant="h1" marginTop={1} marginLeft={1} fontSize={26} >28°</Typography>
+                        <Box sx={ForcastInnerBox10D}>
+                          <Typography variant="h1" fontSize={11} marginTop={2}>
+                            Today
+                          </Typography>
+                          <Typography variant="h2" fontSize={9} marginTop={2}>
+                            16/09
+                          </Typography>
+                          <Typography
+                            variant="h1"
+                            marginTop={1}
+                            marginLeft={1}
+                            fontSize={26}
+                          >
+                            28°
+                          </Typography>
                           <UilCloudShowersAlt />
                         </Box>
                       </Stack>
@@ -147,12 +327,8 @@ export default function RightsideBox() {
                   justifyContent="space-between"
                   spacing={2}
                 >
-                  <Box sx={UVindexStyle}>
-                    3
-                  </Box>
-                  <Box sx={UVindexStyle}>
-                    4
-                  </Box>
+                  <Box sx={UVindexStyle}>3</Box>
+                  <Box sx={UVindexStyle}>4</Box>
                 </Stack>
               </Grid>
             </Grid>

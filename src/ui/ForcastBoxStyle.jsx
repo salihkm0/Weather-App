@@ -1,4 +1,14 @@
-export const ForcastInnerBoxStyle ={
+export const ForcastBoxStyle ={
+  // background:"#00000031",
+  msOverflowStyle: "none",
+  height:"170px",
+  maxWidth:"570px",
+  borderRadius: "20px",
+  display:"flex",
+  alignItems:"end",
+  justifyContent:"center",
+  }
+export const ForcastInnerBoxHrly ={
   // background:"#4c474782",
   height:"95px",
   minWidth:"80px",
@@ -6,19 +16,32 @@ export const ForcastInnerBoxStyle ={
   textAlign:"center",
   margin:"7px",   
 }
-
-export const ForcastBoxStyle ={
-
-background:"#00000031",
-msOverflowStyle: "none",
-height:"170px",
-maxWidth:"570px",
-borderRadius: "20px",
-display:"flex",
-alignItems:"end",
-justifyContent:"center",
+export const ForcastInnerBox10D ={
+  // background:"#4c474782",
+  height:"125px",
+  minWidth:"80px",
+  borderRadius: "20px",
+  textAlign:"center",
+  marginLeft:"10px",
+  marginTop:"15px" 
 }
-
+export const FIBHRFIRST ={
+  background:"#4c474782",
+  height:"100px",
+  minWidth:"80px",
+  borderRadius: "20px",
+  textAlign:"center",
+  margin:"7px", 
+}
+export const FIB10DFIRST ={
+  background:"#4c474782",
+  height:"125px",
+  minWidth:"80px",
+  borderRadius: "20px",
+  textAlign:"center",
+  marginLeft:"10px",
+  marginTop:"15px" 
+}
 export const ForcastSubBoxStyle ={
 height:"123px",
 maxWidth:"550px",
@@ -86,11 +109,9 @@ export const ForcastSubBoxStyle10 ={
   }, 
 }
 
-export const FBhourly={
-textAlign:"center"
-}
-
-
+// export const FBhourly={
+// textAlign:"center"
+// }
 
 
 export const UVindexStyle ={
@@ -100,7 +121,6 @@ export const UVindexStyle ={
   borderRadius: "20px",
   marginBottom:"10px",
   // overflow:"hidden"
-
 }
 
 export const styledHr ={
@@ -110,6 +130,6 @@ margin:"0px"
 
 export const FBhead ={
 // fontSize:"23px",
-textAlign:"start",
 // justifyContent:"end"
+textAlign:"start",
 }

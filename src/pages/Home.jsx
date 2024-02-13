@@ -22,7 +22,7 @@ export default function Home() {
               <CustomizedInputBase sx={SearchBoxStyle} />
               <LeftsideBox />
             </Stack>
-            <RightsideBox/>
+            <RightsideBox />
           </Stack>
         </Box>
       </Container>
