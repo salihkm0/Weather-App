@@ -7,7 +7,7 @@ export const weekDaysNames = [
     'Thursday',
     'Friday',
     'Saturday',
-    'Sunday'
+    'Sunday',
 ]
 export const monthNames = [
     'Jan',
@@ -21,7 +21,7 @@ export const monthNames = [
     'Sep', 
     'Oct', 
     'Nov', 
-    'Dec'
+    'Dec',
 ]
 
 export const getDate = (dateUnix ,timezone) => {
