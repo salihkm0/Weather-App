@@ -123,6 +123,24 @@ export const UVindexStyle ={
   // overflow:"hidden"
 }
 
+export const AirQualityStyle = {
+  background:"#00000031",
+  height:"165px",
+  width:"100%",
+  borderRadius: "20px",
+  marginBottom:"10px",
+  // JustifyContent:"center",
+  paddingBottom:"5px"
+}
+
+export const AirBox = {
+  backgroundColor: "#00000059",
+  borderRadius: "8px",
+  height: "55px",
+  width: "123px",
+  margin:"5px",
+}
+
 export const SSLFstyle ={
   backgroundColor: "#00000059",
   width: "120px",

@@ -18,6 +18,8 @@ import {
   SSstyle,
   SSLFstyle,
   SSRGstyle,
+  AirQualityStyle,
+  AirBox,
 } from "../ui/ForcastBoxStyle";
 import { Box, Grid, Stack, Typography, Span } from "@mui/material";
 import {
@@ -34,7 +36,8 @@ import {
   UilMountainsSun,
   UilBrightnes,
   UilSun,
-  UilMoon
+  UilMoon,
+  UilWind,
 } from "@iconscout/react-unicons";
 import { SideInnerBoxStyle } from "../ui/LeftsideBoxStyle";
 
@@ -336,54 +339,123 @@ export default function RightsideBox() {
                   justifyContent="space-between"
                   spacing={2}
                 >
-                  <Box sx={UVindexStyle}>     
-                         1
+                  <Box sx={AirQualityStyle}>
+                    <Stack direction={"row"} justifyContent={'space-around'} alignItems={'center'}>
+                      <Box display={'flex'}
+                           alignItems={'center'}>
+                      <Typography
+                        marginTop={0.4}
+                      >
+                        <UilWind size={17} />
+                      </Typography>
+                      <Typography
+                        variant="h1"
+                        fontSize={13}
+                        // marginTop={1.9}
+                        marginLeft={0.9}
+                      >
+                        AIR QUALITY
+                      </Typography>
+                      </Box>
+                      <Typography
+                        variant="h1"
+                        fontSize={10}
+                        // marginTop={1.5}
+                        // justifyContent={'end'}
+                        backgroundColor={'red'}
+                        borderRadius={1}
+                        padding={'2px 4px'}
+                      >
+                        POOR
+                      </Typography>
+                    </Stack>
+                    <Box sx={{ display: "flex", justifyContent: "center" }}>
+                      <Stack direction={"column"}>
+                        <Box sx={AirBox}>1</Box>
+                        <Box sx={AirBox}>2</Box>
+                      </Stack>
+                      <Stack direction={"column"}>
+                        <Box sx={AirBox}>3</Box>
+                        <Box sx={AirBox}>4</Box>
+                      </Stack>
+                    </Box>
                   </Box>
-
                   <Box sx={UVindexStyle}>
-                  <Stack direction={"row"}>
-                  <Typography
-                    marginLeft={7.5}
-                    sx={{ display: "inline-block" }}
-                    marginTop={1.5}
-                  >
-                    <UilMountainsSun size={17} />
-                  </Typography>
-                  <Typography
-                    variant="h1"
-                    fontSize={13}
-                    marginTop={1.9}
-                    marginLeft={0.9}
-                  >
-                    {" "}
-                    SUNRISE & SUNSET
-                  </Typography>
-                </Stack>
-                <Stack direction={'row'}>
-                <Box sx={SSLFstyle}>
-                <Stack direction={'row'}>
-                  <Typography marginTop={2} marginLeft={1}> <UilSun size={25} /> </Typography>
+                    <Stack direction={"row"}>
+                      <Typography
+                        marginLeft={7.5}
+                        sx={{ display: "inline-block" }}
+                        marginTop={1.5}
+                      >
+                        <UilMountainsSun size={17} />
+                      </Typography>
+                      <Typography
+                        variant="h1"
+                        fontSize={13}
+                        marginTop={1.9}
+                        marginLeft={0.9}
+                      >
+                        {" "}
+                        SUNRISE & SUNSET
+                      </Typography>
+                    </Stack>
+                    <Stack direction={"row"}>
+                      <Box sx={SSLFstyle}>
+                        <Stack direction={"row"}>
+                          <Typography marginTop={2} marginLeft={1}>
+                            {" "}
+                            <UilSun size={25} />{" "}
+                          </Typography>
 
-                    <Box>
-                      <Stack direction={'column'} >
-                      <Typography variant="h1" fontSize={10} marginRight={2.5} marginTop={1.5}>Sunrise</Typography>
-                      <Typography  variant="h2" fontSize={18} marginLeft={1} >6:18 AM</Typography>
-                      </Stack>
-                    </Box>
-                  </Stack>
-                </Box>
-                <Box sx={SSRGstyle}>
-                <Stack direction={'row'}>
-                  <Typography marginTop={2} marginLeft={1}> <UilMoon size={25} /> </Typography>
-                  <Box>
-                      <Stack direction={'column'} >
-                      <Typography variant="h1" fontSize={10} marginRight={2.5} marginTop={1.5}>Sunset</Typography>
-                      <Typography  variant="h2" fontSize={18} marginLeft={1} >6:18 PM</Typography>
-                      </Stack>
-                    </Box>
-                  </Stack>
-                </Box>
-                </Stack>
+                          <Box>
+                            <Stack direction={"column"}>
+                              <Typography
+                                variant="h1"
+                                fontSize={10}
+                                marginRight={2.5}
+                                marginTop={1.5}
+                              >
+                                Sunrise
+                              </Typography>
+                              <Typography
+                                variant="h2"
+                                fontSize={18}
+                                marginLeft={1}
+                              >
+                                6:18 AM
+                              </Typography>
+                            </Stack>
+                          </Box>
+                        </Stack>
+                      </Box>
+                      <Box sx={SSRGstyle}>
+                        <Stack direction={"row"}>
+                          <Typography marginTop={2} marginLeft={1}>
+                            {" "}
+                            <UilMoon size={25} />{" "}
+                          </Typography>
+                          <Box>
+                            <Stack direction={"column"}>
+                              <Typography
+                                variant="h1"
+                                fontSize={10}
+                                marginRight={2.5}
+                                marginTop={1.5}
+                              >
+                                Sunset
+                              </Typography>
+                              <Typography
+                                variant="h2"
+                                fontSize={18}
+                                marginLeft={1}
+                              >
+                                6:18 PM
+                              </Typography>
+                            </Stack>
+                          </Box>
+                        </Stack>
+                      </Box>
+                    </Stack>
                   </Box>
                 </Stack>
               </Grid>
