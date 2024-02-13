@@ -123,6 +123,24 @@ export const UVindexStyle ={
   // overflow:"hidden"
 }
 
+export const SSLFstyle ={
+  backgroundColor: "#00000059",
+  width: "120px",
+  height: "60px",
+  marginLeft:"10px",
+  marginTop:"30px",
+  borderRadius: "20px",
+}
+export const SSRGstyle ={
+  backgroundColor: "#00000059",
+  width: "120px",
+  height: "60px",
+  marginLeft:"10px",
+  marginTop:"30px",
+  borderRadius: "20px",
+
+}
+
 export const styledHr ={
 width:"100%",
 margin:"0px"

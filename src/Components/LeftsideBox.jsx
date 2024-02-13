@@ -14,6 +14,7 @@ import {
   UilEye,
   UilRaindropsAlt,
   UilUmbrella,
+  UilCloudWind,
 } from "@iconscout/react-unicons";
 
 export default function LeftsideBox() {
@@ -53,7 +54,7 @@ export default function LeftsideBox() {
                     FEELS LIKE
                   </Typography>
                 </Stack>
-                <Typography variant="h1" fontSize={28} marginLeft={1}>
+                <Typography variant="h1" fontSize={25} marginLeft={1}>
                   30°
                 </Typography>
                 <Typography variant="p" fontSize={9} marginLeft={1}>
@@ -67,25 +68,25 @@ export default function LeftsideBox() {
                     sx={{ display: "inline-block" }}
                     marginTop={1.5}
                   >
-                    <UilUmbrella size={17} />
+                    <UilCloudWind size={17} />
                   </Typography>
                   <Typography
                     variant="h1"
                     fontSize={13}
-                    marginTop={2}
+                    marginTop={1.9}
                     marginLeft={0.5}
                   >
                     {" "}
-                    PRECIPITATION
+                    PRESSURE
                   </Typography>
                 </Stack>
                 <Typography
-                  variant="p"
-                  fontSize={14}
+                  variant="h1"
+                  fontSize={20}
                   marginLeft={1}
-                  marginTop={0.2}
+                  marginTop={.2}
                 >
-                  In last 24h
+                1017 hpa
                 </Typography>
               </Box>
             </Stack>
@@ -110,7 +111,7 @@ export default function LeftsideBox() {
                 </Stack>
                 <Typography
                   variant="h1"
-                  fontSize={28}
+                  fontSize={25}
                   marginLeft={1}
                   marginTop={0.7}
                 >
@@ -138,7 +139,7 @@ export default function LeftsideBox() {
                 </Stack>
                 <Typography
                   variant="h1"
-                  fontSize={28}
+                  fontSize={25}
                   marginLeft={1}
                   marginTop={0.5}
                 >

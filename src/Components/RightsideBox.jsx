@@ -15,6 +15,9 @@ import {
   FIB10DFIRST,
   ForcastInnerBox10D,
   ForcastInnerBoxHrly,
+  SSstyle,
+  SSLFstyle,
+  SSRGstyle,
 } from "../ui/ForcastBoxStyle";
 import { Box, Grid, Stack, Typography, Span } from "@mui/material";
 import {
@@ -27,7 +30,13 @@ import {
   UilClouds,
   UilCloudSunHail,
   UilCloudShowersAlt,
+  UilTemperatureHalf,
+  UilMountainsSun,
+  UilBrightnes,
+  UilSun,
+  UilMoon
 } from "@iconscout/react-unicons";
+import { SideInnerBoxStyle } from "../ui/LeftsideBoxStyle";
 
 export default function RightsideBox() {
   return (
@@ -327,8 +336,55 @@ export default function RightsideBox() {
                   justifyContent="space-between"
                   spacing={2}
                 >
-                  <Box sx={UVindexStyle}>3</Box>
-                  <Box sx={UVindexStyle}>4</Box>
+                  <Box sx={UVindexStyle}>     
+                         1
+                  </Box>
+
+                  <Box sx={UVindexStyle}>
+                  <Stack direction={"row"}>
+                  <Typography
+                    marginLeft={7.5}
+                    sx={{ display: "inline-block" }}
+                    marginTop={1.5}
+                  >
+                    <UilMountainsSun size={17} />
+                  </Typography>
+                  <Typography
+                    variant="h1"
+                    fontSize={13}
+                    marginTop={1.9}
+                    marginLeft={0.9}
+                  >
+                    {" "}
+                    SUNRISE & SUNSET
+                  </Typography>
+                </Stack>
+                <Stack direction={'row'}>
+                <Box sx={SSLFstyle}>
+                <Stack direction={'row'}>
+                  <Typography marginTop={2} marginLeft={1}> <UilSun size={25} /> </Typography>
+
+                    <Box>
+                      <Stack direction={'column'} >
+                      <Typography variant="h1" fontSize={10} marginRight={2.5} marginTop={1.5}>Sunrise</Typography>
+                      <Typography  variant="h2" fontSize={18} marginLeft={1} >6:18 AM</Typography>
+                      </Stack>
+                    </Box>
+                  </Stack>
+                </Box>
+                <Box sx={SSRGstyle}>
+                <Stack direction={'row'}>
+                  <Typography marginTop={2} marginLeft={1}> <UilMoon size={25} /> </Typography>
+                  <Box>
+                      <Stack direction={'column'} >
+                      <Typography variant="h1" fontSize={10} marginRight={2.5} marginTop={1.5}>Sunset</Typography>
+                      <Typography  variant="h2" fontSize={18} marginLeft={1} >6:18 PM</Typography>
+                      </Stack>
+                    </Box>
+                  </Stack>
+                </Box>
+                </Stack>
+                  </Box>
                 </Stack>
               </Grid>
             </Grid>
