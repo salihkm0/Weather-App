@@ -26,7 +26,7 @@ export const ForcastInnerBox10D ={
   marginTop:"15px" 
 }
 export const FIBHRFIRST ={
-  background:"#4c474782",
+  background:"#00000059",
   height:"100px",
   minWidth:"80px",
   borderRadius: "20px",
@@ -34,7 +34,7 @@ export const FIBHRFIRST ={
   margin:"7px", 
 }
 export const FIB10DFIRST ={
-  background:"#4c474782",
+  background:"#00000059",
   height:"125px",
   minWidth:"80px",
   borderRadius: "20px",
@@ -65,7 +65,7 @@ overflowY:"hidden",
   borderRadius:"2px"
 },
 "&::-webkit-scrollbar-thumb:hover": {
-  background: "#3b7bbc",
+  background: "#ce1dc5",
 }, 
 
 }
@@ -142,19 +142,19 @@ export const AirBox = {
 }
 
 export const SSLFstyle ={
-  backgroundColor: "#00000059",
-  width: "120px",
-  height: "60px",
-  marginLeft:"10px",
-  marginTop:"30px",
+  backgroundColor: "#10c7ece3",
+  width: "50%",
+  height: "50px",
+  marginLeft:"70px",
+  marginTop:"10px",
   borderRadius: "20px",
 }
 export const SSRGstyle ={
-  backgroundColor: "#00000059",
-  width: "120px",
-  height: "60px",
-  marginLeft:"10px",
-  marginTop:"30px",
+  backgroundColor: "#e22e1aed",
+  width: "50%",
+  height: "50px",
+  marginLeft:"70px",
+  marginTop:"10px",
   borderRadius: "20px",
 
 }

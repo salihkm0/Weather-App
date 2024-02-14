@@ -2,12 +2,9 @@ import React from "react";
 import { RightsideBoxStyle } from "../ui/RightsideBoxStyle";
 import {
   ForcastBoxStyle,
-  ForcastInnerBoxStyle,
   ForcastSubBoxStyle,
   UVindexStyle,
-  FBhourly,
   styledHr,
-  forcastHead,
   FBhead,
   ForcastBoxStyle10,
   ForcastSubBoxStyle10,
@@ -15,13 +12,12 @@ import {
   FIB10DFIRST,
   ForcastInnerBox10D,
   ForcastInnerBoxHrly,
-  SSstyle,
   SSLFstyle,
   SSRGstyle,
   AirQualityStyle,
   AirBox,
 } from "../ui/ForcastBoxStyle";
-import { Box, Grid, Stack, Typography, Span } from "@mui/material";
+import { Box, Grid, Stack, Typography,} from "@mui/material";
 import {
   UilClockThree,
   UilCalender,
@@ -32,14 +28,12 @@ import {
   UilClouds,
   UilCloudSunHail,
   UilCloudShowersAlt,
-  UilTemperatureHalf,
   UilMountainsSun,
-  UilBrightnes,
   UilSun,
   UilMoon,
   UilWind,
 } from "@iconscout/react-unicons";
-import { SideInnerBoxStyle } from "../ui/LeftsideBoxStyle";
+// import { SideInnerBoxStyle } from "../ui/LeftsideBoxStyle";
 
 export default function RightsideBox() {
   return (
@@ -344,14 +338,14 @@ export default function RightsideBox() {
                       <Box display={'flex'}
                            alignItems={'center'}>
                       <Typography
-                        marginTop={0.4}
+                        marginTop={1}
                       >
                         <UilWind size={17} />
                       </Typography>
                       <Typography
                         variant="h1"
                         fontSize={13}
-                        // marginTop={1.9}
+                        marginTop={.8}
                         marginLeft={0.9}
                       >
                         AIR QUALITY
@@ -364,7 +358,8 @@ export default function RightsideBox() {
                         // justifyContent={'end'}
                         backgroundColor={'red'}
                         borderRadius={1}
-                        padding={'2px 4px'}
+                        padding={'2px 8px'}
+                        marginTop={1}
                       >
                         POOR
                       </Typography>
@@ -395,16 +390,16 @@ export default function RightsideBox() {
                         marginTop={1.9}
                         marginLeft={0.9}
                       >
-                        {" "}
+
                         SUNRISE & SUNSET
                       </Typography>
                     </Stack>
-                    <Stack direction={"row"}>
+                    <Stack direction={"column"}>
                       <Box sx={SSLFstyle}>
                         <Stack direction={"row"}>
-                          <Typography marginTop={2} marginLeft={1}>
-                            {" "}
-                            <UilSun size={25} />{" "}
+                          <Typography marginTop={1.5} marginLeft={1}>
+                           
+                            <UilSun size={25} />
                           </Typography>
 
                           <Box>
@@ -413,7 +408,7 @@ export default function RightsideBox() {
                                 variant="h1"
                                 fontSize={10}
                                 marginRight={2.5}
-                                marginTop={1.5}
+                                marginTop={1}
                               >
                                 Sunrise
                               </Typography>
@@ -430,8 +425,8 @@ export default function RightsideBox() {
                       </Box>
                       <Box sx={SSRGstyle}>
                         <Stack direction={"row"}>
-                          <Typography marginTop={2} marginLeft={1}>
-                            {" "}
+                          <Typography marginTop={1.5} marginLeft={1}>
+    
                             <UilMoon size={25} />{" "}
                           </Typography>
                           <Box>
@@ -440,7 +435,7 @@ export default function RightsideBox() {
                                 variant="h1"
                                 fontSize={10}
                                 marginRight={2.5}
-                                marginTop={1.5}
+                                marginTop={1}
                               >
                                 Sunset
                               </Typography>

@@ -4,16 +4,12 @@ import {
   InnerBox,
   InnerBox2,
   LeftsideBoxStyle,
-  LeftsideInnerBoxStyle,
   SideInnerBoxStyle,
 } from "../ui/LeftsideBoxStyle";
-import BackgroundVedio from "./BackgroundVedio";
 import {
   UilTemperatureHalf,
-  UilTear,
   UilEye,
   UilRaindropsAlt,
-  UilUmbrella,
   UilCloudWind,
 } from "@iconscout/react-unicons";
 
