@@ -17,7 +17,7 @@ import {
   AirQualityStyle,
   AirBox,
 } from "../ui/ForcastBoxStyle";
-import { Box, Grid, Stack, Typography,} from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import {
   UilClockThree,
   UilCalender,
@@ -334,31 +334,32 @@ export default function RightsideBox() {
                   spacing={2}
                 >
                   <Box sx={AirQualityStyle}>
-                    <Stack direction={"row"} justifyContent={'space-around'} alignItems={'center'}>
-                      <Box display={'flex'}
-                           alignItems={'center'}>
-                      <Typography
-                        marginTop={1}
-                      >
-                        <UilWind size={17} />
-                      </Typography>
-                      <Typography
-                        variant="h1"
-                        fontSize={13}
-                        marginTop={.8}
-                        marginLeft={0.9}
-                      >
-                        AIR QUALITY
-                      </Typography>
+                    <Stack
+                      direction={"row"}
+                      justifyContent={"space-around"}
+                      alignItems={"center"}
+                    >
+                      <Box display={"flex"} alignItems={"center"}>
+                        <Typography marginTop={1}>
+                          <UilWind size={17} />
+                        </Typography>
+                        <Typography
+                          variant="h1"
+                          fontSize={13}
+                          marginTop={0.8}
+                          marginLeft={0.9}
+                        >
+                          AIR QUALITY
+                        </Typography>
                       </Box>
                       <Typography
                         variant="h1"
                         fontSize={10}
                         // marginTop={1.5}
                         // justifyContent={'end'}
-                        backgroundColor={'red'}
+                        backgroundColor={"red"}
                         borderRadius={1}
-                        padding={'2px 8px'}
+                        padding={"2px 8px"}
                         marginTop={1}
                       >
                         POOR
@@ -366,12 +367,84 @@ export default function RightsideBox() {
                     </Stack>
                     <Box sx={{ display: "flex", justifyContent: "center" }}>
                       <Stack direction={"column"}>
-                        <Box sx={AirBox}>1</Box>
-                        <Box sx={AirBox}>2</Box>
+                        <Box sx={AirBox}>
+                          <Stack direction={"column"}>
+                            <Typography
+                              variant="p"
+                              marginTop={0.5}
+                              marginLeft={1}
+                              fontSize={11}
+                            >
+                              PM25
+                            </Typography>
+                            <Typography
+                              variant="h1"
+                              marginLeft={1}
+                              fontSize={26}
+                            >
+                              270
+                            </Typography>
+                          </Stack>
+                        </Box>
+                        <Box sx={AirBox}>
+                          <Stack direction={"column"}>
+                            <Typography
+                              variant="p"
+                              marginTop={0.5}
+                              marginLeft={1}
+                              fontSize={11}
+                            >
+                              SO2
+                            </Typography>
+                            <Typography
+                              variant="h1"
+                              marginLeft={1}
+                              fontSize={26}
+                            >
+                              4.53
+                            </Typography>
+                          </Stack>
+                        </Box>
                       </Stack>
                       <Stack direction={"column"}>
-                        <Box sx={AirBox}>3</Box>
-                        <Box sx={AirBox}>4</Box>
+                        <Box sx={AirBox}>
+                          <Stack direction={"column"}>
+                            <Typography
+                              variant="p"
+                              marginTop={0.5}
+                              marginLeft={1}
+                              fontSize={11}
+                            >
+                              NO2
+                            </Typography>
+                            <Typography
+                              variant="h1"
+                              marginLeft={1}
+                              fontSize={26}
+                            >
+                              41.8
+                            </Typography>
+                          </Stack>
+                        </Box>
+                        <Box sx={AirBox}>
+                          <Stack direction={"column"}>
+                            <Typography
+                              variant="p"
+                              marginTop={0.5}
+                              marginLeft={1}
+                              fontSize={11}
+                            >
+                              O3
+                            </Typography>
+                            <Typography
+                              variant="h1"
+                              marginLeft={1}
+                              fontSize={26}
+                            >
+                              23.6
+                            </Typography>
+                          </Stack>
+                        </Box>
                       </Stack>
                     </Box>
                   </Box>
@@ -390,7 +463,6 @@ export default function RightsideBox() {
                         marginTop={1.9}
                         marginLeft={0.9}
                       >
-
                         SUNRISE & SUNSET
                       </Typography>
                     </Stack>
@@ -398,7 +470,6 @@ export default function RightsideBox() {
                       <Box sx={SSLFstyle}>
                         <Stack direction={"row"}>
                           <Typography marginTop={1.5} marginLeft={1}>
-                           
                             <UilSun size={25} />
                           </Typography>
 
@@ -426,7 +497,6 @@ export default function RightsideBox() {
                       <Box sx={SSRGstyle}>
                         <Stack direction={"row"}>
                           <Typography marginTop={1.5} marginLeft={1}>
-    
                             <UilMoon size={25} />{" "}
                           </Typography>
                           <Box>

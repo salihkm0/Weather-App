@@ -14,7 +14,10 @@ export const ForcastInnerBoxHrly ={
   minWidth:"80px",
   borderRadius: "20px",
   textAlign:"center",
-  margin:"7px",   
+  margin:"7px", 
+  '&:hover': {
+    background: "#00000059",
+  },  
 }
 export const ForcastInnerBox10D ={
   // background:"#4c474782",
@@ -23,16 +26,23 @@ export const ForcastInnerBox10D ={
   borderRadius: "20px",
   textAlign:"center",
   marginLeft:"10px",
-  marginTop:"15px" 
+  marginTop:"15px",
+  '&:hover': {
+    background: "#00000059",
+  },
 }
-export const FIBHRFIRST ={
-  background:"#00000059",
-  height:"100px",
-  minWidth:"80px",
+export const FIBHRFIRST = {
+  background: "#00000059",
+  height: "100px",
+  minWidth: "80px",
   borderRadius: "20px",
-  textAlign:"center",
-  margin:"7px", 
+  textAlign: "center",
+  margin: "7px",
+  // '&:hover': {
+  //   background: "#00000059",
+  // },
 }
+
 export const FIB10DFIRST ={
   background:"#00000059",
   height:"125px",
@@ -40,7 +50,10 @@ export const FIB10DFIRST ={
   borderRadius: "20px",
   textAlign:"center",
   marginLeft:"10px",
-  marginTop:"15px" 
+  marginTop:"15px",
+  // '&:hover': {
+  //   background: "#00000059",
+  // },
 }
 export const ForcastSubBoxStyle ={
 height:"123px",
@@ -143,17 +156,17 @@ export const AirBox = {
 
 export const SSLFstyle ={
   backgroundColor: "#10c7ece3",
-  width: "50%",
+  width: "70%",
   height: "50px",
-  marginLeft:"70px",
+  marginLeft:"40px",
   marginTop:"10px",
   borderRadius: "20px",
 }
 export const SSRGstyle ={
   backgroundColor: "#e22e1aed",
-  width: "50%",
+  width: "70%",
   height: "50px",
-  marginLeft:"70px",
+  marginLeft:"40px",
   marginTop:"10px",
   borderRadius: "20px",
 
